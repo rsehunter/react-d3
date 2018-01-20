@@ -5,6 +5,7 @@ var color = d3.scale.category20();
 
 console.log(color(2));
 
+
 const renderCircles = (props) => {
   return (coords, index) => {
     const circleProps = {

@@ -17,6 +17,7 @@ const Chart = (props) => {
       <button className="btn randomize" onClick={() => props.randomizeData()}>
         Randomize Data
       </button>
+      
     </div>
   </div>
 };

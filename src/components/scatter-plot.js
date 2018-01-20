@@ -3,6 +3,7 @@ import d3           from 'd3';
 import DataCircles  from './data-circles';
 import XYAxis       from './x-y-axis';
 
+
 const xMax   = (data)  => d3.max(data, (d) => d[0]);
 const yMax   = (data)  => d3.max(data, (d) => d[1]);
 const xScale = (props) => {
