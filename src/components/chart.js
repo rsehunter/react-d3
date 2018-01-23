@@ -2,6 +2,8 @@ import React                from 'react';
 import {connect}            from 'react-redux';
 import * as actionCreators  from '../lib/action-creators';
 import ScatterPlot          from './scatter-plot';
+import {Button}             from 'react-bootstrap';
+import "../App.css"
 
 const styles = {
   width   : 500,
@@ -10,14 +12,14 @@ const styles = {
 };
 
 const Chart = (props) => {
-  return <div>
+  return <div className="Chart">
     <h1>Playing With React and D3</h1>
     <ScatterPlot {...props} {...styles} />
     <div className="controls">
-      <button className="btn randomize" onClick={() => props.randomizeData()}>
+      <button class="btn btn-primary" onClick={() => props.randomizeData()}>
         Randomize Data
       </button>
-      
+
     </div>
   </div>
 };
