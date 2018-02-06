@@ -16,7 +16,7 @@ const Chart = (props) => {
     <h1>Playing With React and D3</h1>
     <ScatterPlot {...props} {...styles} />
     <div className="controls">
-      <button class="btn btn-primary" onClick={() => props.randomizeData()}>
+      <button className="hvr-buzz" onClick={() => props.randomizeData()}>
         Randomize Data
       </button>
 
