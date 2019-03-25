@@ -2,7 +2,6 @@ import React                from 'react';
 import {connect}            from 'react-redux';
 import * as actionCreators  from '../lib/action-creators';
 import ScatterPlot          from './scatter-plot';
-import {Button}             from 'react-bootstrap';
 import "../App.css"
 
 const styles = {
@@ -14,7 +13,7 @@ const styles = {
 const Chart = (props) => {
   return <div className="Chart">
     <h1>Playing With React and D3</h1>
-    <ScatterPlot {...props} {...styles} />
+    <ScatterPlot {...props} {...styles}/>
     <div className="controls">
       <button className="hvr-buzz" onClick={() => props.randomizeData()}>
         Randomize Data
